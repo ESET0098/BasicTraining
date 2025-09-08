@@ -35,11 +35,44 @@ function App() {
 // console.log(prev);
 // ``
 
-const user = {name:"kun",age:21,place:"Mangalore"};
-const {name,...rest} = user;
+// const user = {name:"kun",age:21,place:"Mangalore"};
+// const {name,...rest} = user;
 
-console.log(name);
-console.log(rest);
+// console.log(name);
+// console.log(rest);
+
+// const name = "kunal";
+// const msg = `Hello ${name}`;
+// const msg = `Hi
+//             Hello `
+// console.log(msg);
+
+// const name = 'A';
+// const age = 20;
+// const preson = {name,age};
+// console.log(preson);
+
+// const utlis = {
+//   greet(){
+//     return `Hello ${name}`;
+//   }
+// }
+
+// console.log(utlis.greet());
+
+
+const items = [1,2,3,4,5];
+const list = items.map((it,idx)=><li key = {idx}>{it}</li>);
+const double = items.map(it=>it*2);
+console.log(double);
+console.log(list);
+
+const even = [1,2,3,4].filter(n=>n%2===0).map(n=>n*2);
+console.log(even);
+
+const maxi = [1,2,3,4].reduce((acc,v)=>(v>acc?v:acc),0);
+console.log(maxi);
+
 
   return (
     
